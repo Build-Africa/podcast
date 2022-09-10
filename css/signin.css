@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.left-side-wrapper {
+  background: url("./../images/4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40%;
+  height: 100%;
+  display: block;
+}
+
+.sign-in-wrapper {
+  background-color: #ffffff;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  align-self: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.sign-in-wrapper .container {
+  margin: auto;
+}
+
+.sign-in-header {
+  font-size: 25px;
+  font-family: "Open Sans SemiBold";
+  margin-bottom: 32px;
+}
+
+.third-party-authentication-wrapper {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.third-party-authentication-wrapper div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border: 1px solid#f8f9fc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.third-party-authentication-wrapper div:hover {
+  background-color: #f8f9fc;
+}
+
+.third-party-authentication-wrapper div img {
+  margin-right: 10px;
+}
+
+.third-party-authentication-wrapper div span {
+  color: #404040;
+}
+
+.third-party-authentication-wrapper .google-auth {
+  width: 200px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.third-party-authentication-wrapper .facebook-auth {
+  width: 220px;
+}
+
+.sign-in-form input {
+  width: 100%;
+  padding: 20px;
+  background-color: #f8f9fc;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+::placeholder {
+  color: #595959;
+}
+
+.sign-in-form button {
+  width: 100%;
+  padding: 20px;
+  background-color: #9732e6;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Open Sans SemiBold";
+}
+
+.sign-in-helper-links {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.sign-in-helper-links a {
+  color: #9732e6;
+  font-family: "Open Sans SemiBold";
+  text-decoration: none;
+}
+
+/* 
+MEDIA QUERY - VIEWPORT BREAKPOINTS
+
+576px - SM 
+768px - MD
+992px - LG
+1200px - XL
+
+*/
+
+@media (max-width: 768px) {
+  .left-side-wrapper {
+    display: none;
+  }
+
+  .sign-in-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .third-party-authentication-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .sign-in-wrapper .container {
+    padding: 0 10px;
+  }
+}
