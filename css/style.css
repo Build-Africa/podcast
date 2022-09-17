@@ -1,6 +1,5 @@
 html {
   font-size: 16px;
-  height: 100vh;
 }
 body {
   margin: 0;
@@ -22,8 +21,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 4em;
-  height: 80vh;
+  margin: 1em;
 }
 .writing {
   color: #fff;
@@ -52,6 +50,15 @@ p {
 .writing,
 .circle {
   margin: 3em;
+}
+.footer {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  font-size: 2rem;
+  font-weight: bold;
 }
 @media (max-width: 1150px) {
   html {
