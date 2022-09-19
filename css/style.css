@@ -1,3 +1,87 @@
+html {
+  font-size: 16px;
+}
 body {
-  background-color: red;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom right, #901918, #9732e6);
+  background-repeat: no-repeat;
+}
+h1 {
+  margin: 0;
+}
+p {
+  margin: 2em 0;
+}
+.container .circle img {
+  padding: 2em;
+  width: 100%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+.writing {
+  color: #fff;
+  max-width: 600px;
+}
+.circle {
+  max-width: 600px;
+}
+
+.writing .btn a {
+  margin: 0;
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: 0.6em 2em;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 300ms;
+}
+.writing .btn a:hover,
+.writing .btn a:focus {
+  padding: 0.7em 2.1em;
+  box-shadow: 5px 5px;
+}
+.writing,
+.circle {
+  margin: 3em;
+}
+.footer {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  font-size: 2rem;
+  font-weight: bold;
+}
+@media (max-width: 1150px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 300px) {
+  html {
+    font-size: 11px;
+  }
 }
